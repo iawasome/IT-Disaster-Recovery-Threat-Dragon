@@ -131,6 +131,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -386,6 +393,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -469,7 +477,6 @@
               ]
             },
             "id": "c6438372-07e7-4857-8628-fe561c8c2dc3",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Medicare+ \nMobile\nAplication",
@@ -505,6 +512,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -588,7 +596,6 @@
               ]
             },
             "id": "abbcb865-b099-4801-b440-af847066b8ee",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Medicare+ \nWeb \nAplication",
@@ -647,50 +654,6 @@
               "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Buat janji temu/konsultasi",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Buat janji temu/konsultasi"
-            ],
-            "id": "5ebca3b0-7924-4305-8dfd-383718575d97",
-            "source": {
-              "cell": "ec6bef08-c468-4295-9e12-5cc1531f5dda",
-              "port": "a84b940b-c7ed-47da-9c9a-e5a8ddb9924c"
-            },
-            "target": {
-              "cell": "abbcb865-b099-4801-b440-af847066b8ee",
-              "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
-            }
           },
           {
             "shape": "flow",
@@ -1379,6 +1342,50 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Buat Janji temu/konsultasi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Buat Janji temu/konsultasi"
+            ],
+            "id": "71af905f-cb0e-4edf-a009-81bb94a6fefa",
+            "source": {
+              "cell": "ec6bef08-c468-4295-9e12-5cc1531f5dda",
+              "port": "a84b940b-c7ed-47da-9c9a-e5a8ddb9924c"
+            },
+            "target": {
+              "cell": "abbcb865-b099-4801-b440-af847066b8ee",
+              "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
+            }
+          },
+          {
             "position": {
               "x": 680,
               "y": 180
@@ -1399,6 +1406,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1482,7 +1490,6 @@
               ]
             },
             "id": "90bfe330-3762-4f8c-a7db-599a7e3e15e5",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Medicare+\nAPI",
@@ -1518,6 +1525,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1601,7 +1609,6 @@
               ]
             },
             "id": "8bc549d2-9869-4477-8434-bfa8cdaffdf1",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Rumah sakit/klinik",
@@ -1634,6 +1641,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1717,7 +1725,6 @@
               ]
             },
             "id": "5f958107-cba4-4949-ae9e-ea66b28cb182",
-            "zIndex": 13,
             "data": {
               "type": "tm.Actor",
               "name": "BPJS\nKesehatan",
@@ -1753,6 +1760,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1836,7 +1844,6 @@
               ]
             },
             "id": "8628b189-0c00-4c0a-a99b-1b04a54f889e",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Hybrid database\n(Cloud & On Premise)",
@@ -1873,6 +1880,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1956,7 +1964,6 @@
               ]
             },
             "id": "d51671bb-2ea0-4b04-b338-555c6671bf72",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Apotek & lab",
@@ -1989,6 +1996,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2072,7 +2080,6 @@
               ]
             },
             "id": "e1073f71-3769-4fe9-b910-f9550b875ded",
-            "zIndex": 16,
             "data": {
               "type": "tm.Actor",
               "name": "Sistem Telemedisin",
@@ -2089,6 +2096,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
