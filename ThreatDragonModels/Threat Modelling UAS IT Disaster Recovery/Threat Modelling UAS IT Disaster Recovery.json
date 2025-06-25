@@ -1104,50 +1104,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Claim & validasi\nasuransi",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Claim & validasi\nasuransi"
-            ],
-            "id": "b20784a1-65f9-46fe-ae16-9627e8c7d3c2",
-            "source": {
-              "x": 780,
-              "y": 230
-            },
-            "target": {
-              "cell": "5f958107-cba4-4949-ae9e-ea66b28cb182",
-              "port": "26ee54f7-07e0-4282-a4cf-9fa86a538002"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Menyimpan data",
               "description": "",
               "outOfScope": false,
@@ -1171,56 +1127,6 @@
               "cell": "8628b189-0c00-4c0a-a99b-1b04a54f889e",
               "port": "b4e4d91d-3198-48eb-9155-e4c7f47664b6"
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Mengelola & Mengirim\n data pasien",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Mengelola & Mengirim\n data pasien"
-            ],
-            "id": "8d4d0edc-016b-44cf-8eea-21b5e999cad7",
-            "source": {
-              "cell": "90bfe330-3762-4f8c-a7db-599a7e3e15e5",
-              "port": "3eca4206-eee5-4bb2-bf79-3c4f97f0ce37"
-            },
-            "target": {
-              "cell": "8bc549d2-9869-4477-8434-bfa8cdaffdf1",
-              "port": "8be4efeb-fd21-45fe-be5e-73c9b3d87ff7"
-            },
-            "vertices": [
-              {
-                "x": 720,
-                "y": 70
-              }
-            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -1253,50 +1159,6 @@
                 "y": 350
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "9da906b1-f4fd-4287-b5e5-bb3b14417665",
-            "source": {
-              "cell": "90bfe330-3762-4f8c-a7db-599a7e3e15e5",
-              "port": "b98e0c9c-daba-4c61-aaa6-012231a429b4"
-            },
-            "target": {
-              "cell": "d51671bb-2ea0-4b04-b338-555c6671bf72",
-              "port": "8be4efeb-fd21-45fe-be5e-73c9b3d87ff7"
-            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -1395,60 +1257,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Meminta  & memberi\nhasil konsultasi",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Meminta  & memberi\nhasil konsultasi"
-            ],
-            "id": "58092e34-c33b-45d9-ab78-427beb9a4136",
-            "source": {
-              "cell": "90bfe330-3762-4f8c-a7db-599a7e3e15e5",
-              "port": "b98e0c9c-daba-4c61-aaa6-012231a429b4"
-            },
-            "target": {
-              "cell": "e1073f71-3769-4fe9-b910-f9550b875ded",
-              "port": "8be4efeb-fd21-45fe-be5e-73c9b3d87ff7"
-            },
-            "vertices": [
-              {
-                "x": 940,
-                "y": 160
-              },
-              {
-                "x": 1010,
-                "y": 120
-              }
-            ]
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1522,6 +1330,288 @@
             "target": {
               "cell": "abbcb865-b099-4801-b440-af847066b8ee",
               "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Mengelola & Mengirim\n data pasien",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ebbd781d-0547-481f-ae7c-1bddc532cab0",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "informasi dapat bocor atau terjadi kebocoran jika data rahasia yang dikirim ke eksternal tidak dilindungi dengan baik sehingga dapat dibuka oleh siapapun.",
+                  "mitigation": "Gunakan HTTPS sehingga Data akan terlindungi dari penyadapan (sniffing) di jaringan. Log semua koneksi keluar/masuk, termasuk endpoint, waktu, payload size. serta buat kebijakan data sharing yang ketat dengan menentukan data apa yang boleh dibagikan, kepada siapa, dan dalam format apa.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": "6,5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Mengelola & Mengirim\n data pasien"
+            ],
+            "id": "8d4d0edc-016b-44cf-8eea-21b5e999cad7",
+            "source": {
+              "cell": "90bfe330-3762-4f8c-a7db-599a7e3e15e5",
+              "port": "3eca4206-eee5-4bb2-bf79-3c4f97f0ce37"
+            },
+            "target": {
+              "cell": "8bc549d2-9869-4477-8434-bfa8cdaffdf1",
+              "port": "8be4efeb-fd21-45fe-be5e-73c9b3d87ff7"
+            },
+            "vertices": [
+              {
+                "x": 720,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f61f73af-e1e2-4585-9618-70041838d1c7",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "data dapat bocor atau terjadi kebocoran jika data rahasia yang dikirim kan ke eksternal tidak dilindungi dengan baik sehingga data bisa dibuka dengan mudah.",
+                  "mitigation": "Enkripsi data yang dikirim atau masuk lalu Gunakan HTTPS sehingga Data akan terlindungi dari penyadapan (sniffing) di jaringan. Log semua koneksi keluar/masuk, termasuk endpoint, waktu, payload size. serta buat kebijakan data sharing yang ketat dengan menentukan data apa yang boleh dibagikan, kepada siapa, dan dalam format apa.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": "6,5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "9da906b1-f4fd-4287-b5e5-bb3b14417665",
+            "source": {
+              "cell": "90bfe330-3762-4f8c-a7db-599a7e3e15e5",
+              "port": "b98e0c9c-daba-4c61-aaa6-012231a429b4"
+            },
+            "target": {
+              "cell": "d51671bb-2ea0-4b04-b338-555c6671bf72",
+              "port": "8be4efeb-fd21-45fe-be5e-73c9b3d87ff7"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Meminta  & memberi\nhasil konsultasi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "20d09658-da20-4d33-bf66-06d8fd3d1568",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Data dapat bocor atau terjadi kebocoran jika data yang dikirim ke eksternal tidak dilindungi dengan baik sehingga dapat dibuka dengan mudah oleh entitas yang salah.",
+                  "mitigation": "Enkripsi data yang dikirim atau masuk lalu Gunakan HTTPS sehingga Data akan terlindungi dari penyadapan (sniffing) di jaringan. Log semua koneksi keluar/masuk, termasuk endpoint, waktu, payload size. serta buat kebijakan data sharing yang ketat dengan menentukan data apa yang boleh dibagikan, kepada siapa, dan dalam format apa.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": "6,5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 3,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Meminta  & memberi\nhasil konsultasi"
+            ],
+            "id": "58092e34-c33b-45d9-ab78-427beb9a4136",
+            "source": {
+              "cell": "90bfe330-3762-4f8c-a7db-599a7e3e15e5",
+              "port": "b98e0c9c-daba-4c61-aaa6-012231a429b4"
+            },
+            "target": {
+              "cell": "e1073f71-3769-4fe9-b910-f9550b875ded",
+              "port": "8be4efeb-fd21-45fe-be5e-73c9b3d87ff7"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 160
+              },
+              {
+                "x": 1010,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Claim & validasi\nasuransi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c74f2cd5-415d-4330-aa6c-926d8164dc0d",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Data dapat bocor atau terjadi kebocoran jika data yang dikirim ke eksternal tidak dilindungi dengan baik sehingga dapat dibuka dengan mudah oleh entitas yang salah.",
+                  "mitigation": "Enkripsi data yang dikirim atau masuk lalu Gunakan HTTPS sehingga Data akan terlindungi dari penyadapan (sniffing) di jaringan. Log semua koneksi keluar/masuk, termasuk endpoint, waktu, payload size. serta buat kebijakan data sharing yang ketat dengan menentukan data apa yang boleh dibagikan, kepada siapa, dan dalam format apa.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": "6,5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Claim & validasi\nasuransi"
+            ],
+            "id": "b20784a1-65f9-46fe-ae16-9627e8c7d3c2",
+            "source": {
+              "x": 780,
+              "y": 230
+            },
+            "target": {
+              "cell": "5f958107-cba4-4949-ae9e-ea66b28cb182",
+              "port": "26ee54f7-07e0-4282-a4cf-9fa86a538002"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -1705,8 +1795,8 @@
                 "text": "Rumah sakit/klinik"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1802,9 +1892,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "13785f5c-2100-4256-90bb-7a2d3b9475a0",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Sistem palsu berpura-pura sebagai pihak rumah sakit/klinik resmi untuk menipu sistem dan mendapatkan akses tidak sah.",
+                  "mitigation": "Implementasikan Mutual TLS (mTLS) untuk memastikan bahwa hanya sistem resmi yang bisa terhubung, karena masing-masing harus menyertakan sertifikat digital yang valid. Terapkan juga Whitelisting jadi Hanya alamat IP yang sudah diizinkan yang dapat mengakses sistem .",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": "8,0"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1821,8 +1929,8 @@
                 "text": "BPJS\nKesehatan"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1918,9 +2026,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4f6c0f83-e7c8-44dc-8a57-9e2172cb718c",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Sistem palsu berpura pura menjadi pihak asuransi resmi untuk menipu sistem dan mendapatkan akses tidak sah.",
+                  "mitigation": "Implementasikan Mutual TLS (mTLS) untuk memastikan bahwa hanya sistem resmi yang bisa terhubung, karena masing-masing harus menyertakan sertifikat digital yang valid. Terapkan juga Whitelisting jadi Hanya alamat IP yang sudah diizinkan yang dapat mengakses sistem .",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "8,0"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2092,13 +2218,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2115,8 +2234,8 @@
                 "text": "Apotek & lab"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2212,9 +2331,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "1cf7e878-af08-46a4-b588-f27cdc2afdf8",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Sistem palsu berpura pura menjadi apotek atau lab resmi untuk menipu sistem dan mendapatkan akses tidak sah.",
+                  "mitigation": "Implementasikan Mutual TLS (mTLS) untuk memastikan bahwa hanya sistem resmi yang bisa terhubung, karena masing-masing harus menyertakan sertifikat digital yang valid. Terapkan juga Whitelisting jadi Hanya alamat IP yang sudah diizinkan yang dapat mengakses sistem .",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": "8,0"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2231,8 +2368,8 @@
                 "text": "Sistem Telemedisin"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2328,9 +2465,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "2cd083aa-ff25-47b7-8881-6d569db65230",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Sistem palsu berpura pura menjadi telemedisin resmi untuk menipu sistem dan mendapatkan akses tidak sah.",
+                  "mitigation": "Implementasikan Mutual TLS (mTLS) untuk memastikan bahwa hanya sistem resmi yang bisa terhubung, karena masing-masing harus menyertakan sertifikat digital yang valid. Terapkan juga Whitelisting jadi Hanya alamat IP yang sudah diizinkan yang dapat mengakses sistem .",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": "8,0"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 3,
+                "repudiation": 0
+              }
             }
           }
         ]
@@ -2338,6 +2493,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 18
+    "threatTop": 27
   }
 }
