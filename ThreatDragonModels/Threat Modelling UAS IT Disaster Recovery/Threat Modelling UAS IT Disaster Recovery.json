@@ -415,8 +415,8 @@
                 "text": "Medicare+ \nMobile\nAplication"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -512,21 +512,47 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
+              "threats": [
+                {
+                  "id": "c1fb14bf-e205-4da5-9d64-db3e97018dea",
+                  "title": "Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attacker dapat memanipulasi data dari sisi client dengan cara mengubah isi form ataupun memodifikasi request API.",
+                  "mitigation": "Integrasikan Validasi input agar attacker tidak dapat memasukan input berbahaya ke sistem, gunakan juga HTTPS agar web lebih aman serta enkripsi setiap data yang dikirim",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "6,4"
+                },
+                {
+                  "id": "c80e63c0-10a6-43f9-bed0-ed52f22fc05d",
+                  "title": "Repudiation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Pasien dapat menyangkal pernah membuat janji temu ataupun bahkan pernah mengakses medicare.",
+                  "mitigation": "Implementasikan audit log yang disertai timestamp dan tidak dapat dihapus agar selalu menyimpan semua log jika suatu waktu dibutuhkan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "4,2"
+                }
               ],
-              "name": null
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1512,8 +1538,8 @@
                 "text": "Medicare+\nAPI"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1609,12 +1635,60 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f16740fa-4c39-4788-8966-5bd0f3ac1025",
+                  "title": "Denial Of Service",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Attacker bisa menyerang dengan cara mengirim request secara bersamaan dan banyak, jadi mengganggu kinerja API atau bahkan hingga down.",
+                  "mitigation": "mengintegrasikan IDS (Intrusion Detection System) dan IPS (Intrusion Prevention System): Mendeteksi dan menghentikan trafik mencurigakan. Serta membatasi jumlah permintaan dari satu IP atau rate limiting.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "7,5"
+                },
+                {
+                  "id": "2612183b-eaf7-4f85-af03-58969be14dc6",
+                  "title": "Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "attacker bisa memanipulasi request/response dari/ke API.",
+                  "mitigation": "implementasikan validasi setiap request/response, serta gunakan enkripsi setiap data yang dikirim atau disimpan. serta untuk keamanan tambahan bisa gunakan HTTPS agar lebih aman",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "6,3"
+                },
+                {
+                  "id": "94c1835c-8f04-429b-955d-531382483557",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Jika autentikasi sistem lemah API dapat mengirim kan data ke entitas yang salah, ditambah data tidak dibatasi berdasarkan role maka akan mudah dibuka oleh entitas lain.",
+                  "mitigation": "Terapkan autentikasi dan otorisasi yang ketat agar tidak mengirimkan data ke entitas yang salah, serta batasi akses berdasarkan role agar data tidak dapat diakses oleh entitas lain.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "7,1"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1863,11 +1937,13 @@
                 "text": "Hybrid database\n(Cloud & On Premise)"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1963,13 +2039,66 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b757e140-7cbb-4e55-8614-ca6e1b09c4c2",
+                  "title": "Tampering",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attacker dapat mengubah isi database (misalnya menghapus atau memodifikasi hasil diagnosa pasien, mengganti data resep, dst).",
+                  "mitigation": "Batasi hak akses pada data sesuai role sehingga entitas tidak dapat membuka data entitas lain kecuali yang memang rolenya. lalu hanya beri akses write/update ke proses tertentu.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": "7,8"
+                },
+                {
+                  "id": "225cc425-c7bc-40d0-af10-aa2f6bd3a338",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif dalam database dapat diakses oleh entitas yang salah, karena konfigurasi buruk, query tidak aman, atau bocornya kredential.",
+                  "mitigation": "Selalu enkripsi data pada saat disimpan atau dibackup, batasi juga hak akses setiap entitas agar tidak terjadi kebocoran data atau dapat mengakses data yang bukan miliknya.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": "7,1"
+                },
+                {
+                  "id": "e6b126de-12bc-4db7-806f-250c4d5af3a9",
+                  "title": "Denial Of Service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Database menjadi tidak responsif karena dibanjiri query (baik disengaja maupun karena bottleneck), membuat sistem terganggu atau bahkan down.",
+                  "mitigation": "Implementasikan rate limiting untuk membatasi jumlah permintaan (request) yang dapat dilakukan ke API dalam jangka waktu tertentu dari satu user/IP. Selalu monitoring database menggunakan tools agar performa database terjaga.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "6,5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2209,6 +2338,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 10
+    "threatTop": 18
   }
 }
