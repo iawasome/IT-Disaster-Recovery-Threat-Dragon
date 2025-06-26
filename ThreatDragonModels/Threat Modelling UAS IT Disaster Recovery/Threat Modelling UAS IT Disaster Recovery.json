@@ -142,19 +142,32 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
-                  "score": "7,5"
+                  "score": "8,2"
+                },
+                {
+                  "id": "a8822749-52a5-4b3a-bc55-0281c817527e",
+                  "title": "Repudiation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Pasien dapat menyangkal pernah membuat janji temu ataupun bahkan pernah mengakses medicare.",
+                  "mitigation": "Implementasikan audit log yang disertai timestamp dan tidak dapat dihapus agar selalu menyimpan semua log jika suatu waktu dibutuhkan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": "4,3"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "repudiation": 0
+                "spoofing": 2,
+                "repudiation": 6
               }
             }
           },
           {
             "position": {
               "x": 60,
-              "y": 208
+              "y": 195
             },
             "size": {
               "width": 112.5,
@@ -280,7 +293,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
             }
@@ -522,32 +535,19 @@
                   "id": "c1fb14bf-e205-4da5-9d64-db3e97018dea",
                   "title": "Tampering",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Tampering",
                   "description": "Attacker dapat memanipulasi data dari sisi client dengan cara mengubah isi form ataupun memodifikasi request API.",
                   "mitigation": "Integrasikan Validasi input agar attacker tidak dapat memasukan input berbahaya ke sistem, gunakan juga HTTPS agar web lebih aman serta enkripsi setiap data yang dikirim",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
-                  "score": "6,4"
-                },
-                {
-                  "id": "c80e63c0-10a6-43f9-bed0-ed52f22fc05d",
-                  "title": "Repudiation",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Repudiation",
-                  "description": "Pasien dapat menyangkal pernah membuat janji temu ataupun bahkan pernah mengakses medicare.",
-                  "mitigation": "Implementasikan audit log yang disertai timestamp dan tidak dapat dihapus agar selalu menyimpan semua log jika suatu waktu dibutuhkan.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": "4,2"
+                  "score": "7,6"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 3,
                 "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -676,33 +676,20 @@
                   "id": "34536818-d409-4e61-9bd0-1667f6136561",
                   "title": "Tampering",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Tampering",
                   "description": "Attacker dapat memanipulasi data dari sisi client dengan cara mengubah isi form ataupun memodifikasi request API.",
                   "mitigation": "Integrasikan Validasi input agar attacker tidak dapat memasukan input berbahaya ke sistem, gunakan juga HTTPS agar web lebih aman serta enkripsi setiap data yang dikirim",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
-                  "score": "6,4"
-                },
-                {
-                  "id": "92d18745-2274-4616-ae1e-57430ab9010d",
-                  "title": "Repudiation",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Repudiation",
-                  "description": "Pasien dapat menyangkal pernah membuat janji temu ataupun bahkan pernah mengakses medicare.",
-                  "mitigation": "Implementasikan audit log yang disertai timestamp dan tidak dapat dihapus agar selalu menyimpan semua log jika suatu waktu dibutuhkan.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": "4,2"
+                  "score": "7,6"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
-                "repudiation": 2,
+                "tampering": 2,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -753,146 +740,6 @@
               "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Melihat data pasien\natau jadwal temu/konsul",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "c4752739-e117-45e4-852b-7f5dca777818",
-                  "title": "Information Disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Apabila dokter tidak dibatasi aksesnya maka dokter bisa melihat semua data pasien sekalipun bukan data pasien yang ditanganinya.",
-                  "mitigation": "Batasi akses dokter atau bisa dengan buat suatu kelompok data khusus untuk setiap dokter jadi dokter tidak akan bisa mengakses data pasien yang tidak ditanganinya.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 8,
-                  "score": "6,5"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Melihat data pasien\natau jadwal temu/konsul"
-            ],
-            "id": "fe4f1e1c-b3a5-45d8-96b8-66ac6a0911a9",
-            "source": {
-              "x": 180,
-              "y": 240
-            },
-            "target": {
-              "cell": "abbcb865-b099-4801-b440-af847066b8ee",
-              "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
-            },
-            "vertices": [
-              {
-                "x": 300,
-                "y": 270
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Memantau dan mengaudit\nregulasi",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "9eddb39a-483c-4d16-a9c3-612101ebeb3f",
-                  "title": "Information Disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Pada saat kementrian melakukan audit, ada kemungkinan terjadinya kebocoran data ataupun kementrian bisa membuka seluruh data pasien",
-                  "mitigation": "Batasi akses kementrian serta Gunakan Enkripsi setiap data yang dikirim ke pihak ke 3 sehingga tidak terjadi kebocoran data.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 7,
-                  "score": "5,3"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 2,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Memantau dan mengaudit\nregulasi"
-            ],
-            "id": "d4822ad6-52f0-4ee3-8491-d3ab9b6159ea",
-            "source": {
-              "cell": "f26207ba-a5d5-49d9-8aad-67e24b9716fb",
-              "port": "a84b940b-c7ed-47da-9c9a-e5a8ddb9924c"
-            },
-            "target": {
-              "cell": "abbcb865-b099-4801-b440-af847066b8ee",
-              "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 360
-              }
-            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -1353,6 +1200,76 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Memantau dan mengaudit\nregulasi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9eddb39a-483c-4d16-a9c3-612101ebeb3f",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Pada saat kementrian melakukan audit, ada kemungkinan terjadinya kebocoran data ataupun kementrian bisa membuka seluruh data pasien",
+                  "mitigation": "Batasi akses kementrian serta Gunakan Enkripsi setiap data yang dikirim ke pihak ke 3 sehingga tidak terjadi kebocoran data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "5,3"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Memantau dan mengaudit\nregulasi"
+            ],
+            "id": "d4822ad6-52f0-4ee3-8491-d3ab9b6159ea",
+            "source": {
+              "cell": "f26207ba-a5d5-49d9-8aad-67e24b9716fb",
+              "port": "a84b940b-c7ed-47da-9c9a-e5a8ddb9924c"
+            },
+            "target": {
+              "cell": "abbcb865-b099-4801-b440-af847066b8ee",
+              "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Mengelola & Mengirim\n data pasien",
               "description": "",
               "outOfScope": false,
@@ -1374,12 +1291,12 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 21,
-                  "score": "6,5"
+                  "score": "7,1"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -1396,6 +1313,10 @@
               "port": "8be4efeb-fd21-45fe-be5e-73c9b3d87ff7"
             },
             "vertices": [
+              {
+                "x": 730,
+                "y": 140
+              },
               {
                 "x": 720,
                 "y": 70
@@ -1423,7 +1344,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Memfalitasi obat\ndan cek lab",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1437,24 +1358,24 @@
                   "id": "f61f73af-e1e2-4585-9618-70041838d1c7",
                   "title": "Information Disclosure",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "data dapat bocor atau terjadi kebocoran jika data rahasia yang dikirim kan ke eksternal tidak dilindungi dengan baik sehingga data bisa dibuka dengan mudah.",
                   "mitigation": "Enkripsi data yang dikirim atau masuk lalu Gunakan HTTPS sehingga Data akan terlindungi dari penyadapan (sniffing) di jaringan. Log semua koneksi keluar/masuk, termasuk endpoint, waktu, payload size. serta buat kebijakan data sharing yang ketat dengan menentukan data apa yang boleh dibagikan, kepada siapa, dan dalam format apa.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 23,
-                  "score": "6,5"
+                  "score": "7,1"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
             "labels": [
-              "Data Flow"
+              "Memfalitasi obat\ndan cek lab"
             ],
             "id": "9da906b1-f4fd-4287-b5e5-bb3b14417665",
             "source": {
@@ -1501,19 +1422,19 @@
                   "id": "20d09658-da20-4d33-bf66-06d8fd3d1568",
                   "title": "Information Disclosure",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "Data dapat bocor atau terjadi kebocoran jika data yang dikirim ke eksternal tidak dilindungi dengan baik sehingga dapat dibuka dengan mudah oleh entitas yang salah.",
                   "mitigation": "Enkripsi data yang dikirim atau masuk lalu Gunakan HTTPS sehingga Data akan terlindungi dari penyadapan (sniffing) di jaringan. Log semua koneksi keluar/masuk, termasuk endpoint, waktu, payload size. serta buat kebijakan data sharing yang ketat dengan menentukan data apa yang boleh dibagikan, kepada siapa, dan dalam format apa.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 24,
-                  "score": "6,5"
+                  "score": "7,1"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 4,
                 "denialOfService": 0
               }
             },
@@ -1575,19 +1496,19 @@
                   "id": "c74f2cd5-415d-4330-aa6c-926d8164dc0d",
                   "title": "Information Disclosure",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "Data dapat bocor atau terjadi kebocoran jika data yang dikirim ke eksternal tidak dilindungi dengan baik sehingga dapat dibuka dengan mudah oleh entitas yang salah.",
                   "mitigation": "Enkripsi data yang dikirim atau masuk lalu Gunakan HTTPS sehingga Data akan terlindungi dari penyadapan (sniffing) di jaringan. Log semua koneksi keluar/masuk, termasuk endpoint, waktu, payload size. serta buat kebijakan data sharing yang ketat dengan menentukan data apa yang boleh dibagikan, kepada siapa, dan dalam format apa.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 27,
-                  "score": "6,5"
+                  "score": "7,1"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -1602,7 +1523,77 @@
             "target": {
               "cell": "5f958107-cba4-4949-ae9e-ea66b28cb182",
               "port": "26ee54f7-07e0-4282-a4cf-9fa86a538002"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
             },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Melihat data pasien\natau jadwal temu/konsul",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c4752739-e117-45e4-852b-7f5dca777818",
+                  "title": "Elevation Of Privilage",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Apabila dokter tidak dibatasi aksesnya maka dokter bisa melihat semua data pasien sekalipun bukan data pasien yang ditanganinya.",
+                  "mitigation": "Batasi akses dokter atau bisa dengan buat suatu kelompok data khusus untuk setiap dokter jadi dokter tidak akan bisa mengakses data pasien yang tidak ditanganinya.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "5,9"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 5,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Melihat data pasien\natau jadwal temu/konsul"
+            ],
+            "id": "fe4f1e1c-b3a5-45d8-96b8-66ac6a0911a9",
+            "source": {
+              "x": 180,
+              "y": 240
+            },
+            "target": {
+              "cell": "abbcb865-b099-4801-b440-af847066b8ee",
+              "port": "5efb6a4c-45e8-4a58-a102-c4e7cb2742c1"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 270
+              }
+            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1735,27 +1726,27 @@
                   "id": "f16740fa-4c39-4788-8966-5bd0f3ac1025",
                   "title": "Denial Of Service",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Attacker bisa menyerang dengan cara mengirim request secara bersamaan dan banyak, jadi mengganggu kinerja API atau bahkan hingga down.",
-                  "mitigation": "mengintegrasikan IDS (Intrusion Detection System) dan IPS (Intrusion Prevention System): Mendeteksi dan menghentikan trafik mencurigakan. Serta membatasi jumlah permintaan dari satu IP atau rate limiting.",
+                  "mitigation": "mengintegrasikan IDS (Intrusion Detection System) dan IPS (Intrusion Prevention System) untuk Mendeteksi dan menghentikan trafik mencurigakan. Implementasikan rate limiting untuk membatasi jumlah permintaan (request) yang dapat dilakukan ke API dalam jangka waktu tertentu dari satu user/IP. Selalu monitoring database menggunakan tools agar performa database terjaga.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 13,
-                  "score": "7,5"
+                  "score": "6,5"
                 },
                 {
                   "id": "2612183b-eaf7-4f85-af03-58969be14dc6",
                   "title": "Tampering",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Tampering",
                   "description": "attacker bisa memanipulasi request/response dari/ke API.",
                   "mitigation": "implementasikan validasi setiap request/response, serta gunakan enkripsi setiap data yang dikirim atau disimpan. serta untuk keamanan tambahan bisa gunakan HTTPS agar lebih aman",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 14,
-                  "score": "6,3"
+                  "score": "7,6"
                 },
                 {
                   "id": "94c1835c-8f04-429b-955d-531382483557",
@@ -1773,10 +1764,10 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 3,
                 "repudiation": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 2,
+                "informationDisclosure": 3,
+                "denialOfService": 4,
                 "elevationOfPrivilege": 0
               }
             }
@@ -1906,11 +1897,11 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 19,
-                  "score": "8,0"
+                  "score": "8,2"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
@@ -2040,11 +2031,11 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 26,
-                  "score": "8,0"
+                  "score": "8,2"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
@@ -2052,7 +2043,7 @@
           {
             "position": {
               "x": 670,
-              "y": 378
+              "y": 367
             },
             "size": {
               "width": 140,
@@ -2183,7 +2174,7 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 16,
-                  "score": "7,8"
+                  "score": "7,6"
                 },
                 {
                   "id": "225cc425-c7bc-40d0-af10-aa2f6bd3a338",
@@ -2213,10 +2204,10 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 4,
                 "repudiation": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 1
+                "informationDisclosure": 2,
+                "denialOfService": 3
               }
             }
           },
@@ -2345,11 +2336,11 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 22,
-                  "score": "8,0"
+                  "score": "8,2"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
             }
@@ -2479,11 +2470,11 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 25,
-                  "score": "8,0"
+                  "score": "8,2"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 4,
                 "repudiation": 0
               }
             }
@@ -2493,6 +2484,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 27
+    "threatTop": 29
   }
 }
