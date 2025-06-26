@@ -543,6 +543,19 @@
                   "new": false,
                   "number": 11,
                   "score": "7,6"
+                },
+                {
+                  "id": "040a8d1e-7d87-4fb4-95ec-b4bdcabab5f8",
+                  "title": "Denial Of Service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attacker bisa menyerang dengan cara mengirim request secara bersamaan dan banyak, jadi mengganggu kinerja API atau bahkan hingga down.",
+                  "mitigation": "mengintegrasikan IDS (Intrusion Detection System) dan IPS (Intrusion Prevention System) untuk Mendeteksi dan menghentikan trafik mencurigakan. Implementasikan rate limiting untuk membatasi jumlah permintaan (request) yang dapat dilakukan ke API dalam jangka waktu tertentu dari satu user/IP. Selalu monitoring database menggunakan tools agar performa database terjaga.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": "6,5"
                 }
               ],
               "threatFrequency": {
@@ -550,7 +563,7 @@
                 "tampering": 3,
                 "repudiation": 1,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
+                "denialOfService": 3,
                 "elevationOfPrivilege": 0
               }
             }
@@ -684,6 +697,19 @@
                   "new": false,
                   "number": 9,
                   "score": "7,6"
+                },
+                {
+                  "id": "f5fdac1d-17f7-46d4-af50-37eb0be14953",
+                  "title": "Denial Of Service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attacker bisa menyerang dengan cara mengirim request secara bersamaan dan banyak, jadi mengganggu kinerja API atau bahkan hingga down.",
+                  "mitigation": "mengintegrasikan IDS (Intrusion Detection System) dan IPS (Intrusion Prevention System) untuk Mendeteksi dan menghentikan trafik mencurigakan. Implementasikan rate limiting untuk membatasi jumlah permintaan (request) yang dapat dilakukan ke API dalam jangka waktu tertentu dari satu user/IP. Selalu monitoring database menggunakan tools agar performa database terjaga.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": "6,5"
                 }
               ],
               "threatFrequency": {
@@ -691,7 +717,7 @@
                 "tampering": 2,
                 "repudiation": 1,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
@@ -1593,17 +1619,7 @@
                 "x": 300,
                 "y": 270
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
@@ -1767,7 +1783,7 @@
                 "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 3,
-                "denialOfService": 4,
+                "denialOfService": 6,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2484,6 +2500,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 29
+    "threatTop": 31
   }
 }
